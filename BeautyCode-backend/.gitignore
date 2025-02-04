@@ -7,10 +7,5 @@ __pycache__/
 # Ignore other files
 *.log
 
-# Environment Variable
-.env/
-
-# Node modules
-node_modules
-.vscode-test/
-*.vsix
+# Ignore the environment variable file
+.env

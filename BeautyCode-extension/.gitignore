@@ -1,0 +1,4 @@
+# Ignore the Node modules
+node_modules
+.vscode-test/
+*.vsix
