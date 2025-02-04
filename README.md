@@ -10,8 +10,7 @@ To install BeautyCode, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://YASHHackathon-Team-28@dev.azure.com/YASHHackathon-Team-28/API-Project-Team-28/_git/API-Project-Team-28
-   cd API-Project-Team-28
+   git clone https://github.com/agnihotriparag22/BeautyCode-Code-optimizer.git
 
 2. Install the backend dependencies:
     ```bash

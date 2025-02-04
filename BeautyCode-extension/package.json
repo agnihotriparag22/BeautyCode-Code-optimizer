@@ -1,0 +1,62 @@
+{
+  "name": "beautycode",
+  "displayName": "BeautyCode",
+  "description": "Optimize code to industry standards",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "beautycode.readAll",
+        "title": "Read: Entire Document"
+      },
+      {
+        "command": "beautycode.readSelection",
+        "title": "Read: Selected Text"
+      },
+      {
+        "command": "screen-reader.readLine",
+        "title": "Read: Current Line"
+      },
+      {
+        "command": "beautycode.suggestions",
+        "title": "BeautyCode: Suggests code optimization techniques and Feedback"
+      },
+      {
+        "command": "beautycode.createDocument",
+        "title": "BeautyCode: Creates complete document for your code "
+      },
+      {
+        "command": "beautycode.startChat",
+        "title": "BeautyCode: AI Chat Window"
+      },
+      {
+        "command": "beautycode.processDocument",
+        "title": "BeautyCode: Optimize your Code"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.16.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
+  }
+}

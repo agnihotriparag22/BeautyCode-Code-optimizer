@@ -1,0 +1,16 @@
+# Python cache files
+__pycache__/
+
+# Virtual environment
+.venv/
+
+# Ignore other files
+*.log
+
+# Environment Variable
+.env/
+
+# Node modules
+node_modules
+.vscode-test/
+*.vsix
