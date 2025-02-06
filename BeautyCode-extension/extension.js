@@ -496,8 +496,9 @@ function activate(context) {
                 let formattedResponse2 =  response.data.text;
                 fs.appendFileSync(beautycodeFilePath, formattedResponse2);
                 fs.appendFileSync(beautycodeFilePath,margin);
-             
-                const response_test = await axios.post("http://127.0.0.1:8000/beautycode/v1/analyze-code", {
+                if(document.languageId==="python"){
+
+                                const response_test = await axios.post("http://127.0.0.1:8000/beautycode/v1/analyze-code", {
                     "text": text,
                     "language":document.languageId
                 });
@@ -517,7 +518,7 @@ function activate(context) {
                 let formattedResponse3 =  response_test1.data.text;
                 fs.appendFileSync(beautycodeFilePath, formattedResponse3+'\n');
                 fs.appendFileSync(beautycodeFilePath,margin+'\n');
-               
+            };
                 const resultDocument = await vscode.workspace.openTextDocument(beautycodeFilePath);
  
                 await vscode.window.showTextDocument(resultDocument, {
